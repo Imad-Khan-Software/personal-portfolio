@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imad Khan | Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="circles">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+</div>
+
+<nav class="navbar">
+    <div class="logo">Imad <span>Khan.dev</span></div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-btn" onclick="toggleTheme()">☀️</button></li>
+    </ul>
+</nav>
+
+<main class="container">
+
+<section id="home" class="text-center">
+    <div class="image-wrapper">
+        <img src="Assets/my_pic.jpg" class="profile-img" alt="Imad Khan">
+    </div>
+    <h1>I'm <span id="typing-text"></span></h1>
+    <p>Software Engineering Student | Frontend Developer</p>
+</section>
+
+<!-- ===== ACADEMIC SECTION ===== -->
+<section id="education" class="academic-section">
+    <h2 class="section-title">🎓 Academic Background</h2>
+
+    <div class="edu-search">
+        <input type="text" id="search" placeholder="Search degree or institute..." onkeyup="filterTable()">
+    </div>
+
+    <div class="table-wrapper">
+        <table id="eduTable">
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BS Software Engineering</td>
+                    <td>UET Peshawar</td>
+                    <td>2025 – 2029</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>GHSSSSA Nisatta</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Matric</td>
+                    <td>NBHPH School</td>
+                    <td>2022</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>💻 Skills</h2>
+    <input type="text" class="skill-search" placeholder="Search skills..." onkeyup="filterSkills()">
+    <div class="skills-grid">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">C</div>
+        <div class="skill-item">Data Analysis</div>
+        <div class="skill-item">Freelancing</div>
+    </div>
+</section>
+
+<section id="cv" class="text-center">
+    <h2>📄 Resume</h2>
+    <button class="submit-btn" onclick="showCV()">View Resume</button>
+    <div id="cvContainer">
+        <iframe id="cvFrame"></iframe>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form onsubmit="return validateForm()">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="submit-btn">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
