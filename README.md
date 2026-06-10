@@ -1,7 +1,7 @@
 # Personal Portfolio Website 🚀
 
 Welcome to the repository for my personal portfolio website! This project showcases my academic background, technical skill set, and frontend development capabilities.
-LIVE DEMO ** https://iamd-khan-software.github.io/personal-portfolio/
+LIVE DEMO ** https://imad-khan-software.github.io/personal-portfolio/
 ## 🌟 Features
 - **Dynamic Typing Animation:** Interactive greeting effect displaying my current roles.
 - **Dark/Light Mode:** Seamless theme toggling for an optimized user reading experience.
